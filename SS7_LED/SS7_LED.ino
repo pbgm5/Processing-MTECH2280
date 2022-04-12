@@ -1,4 +1,4 @@
- const int Button = ~5;
+ const int Button = 5;
  const int LED1 = 2;
  const int LED2 = 4;
  const int LED3 = 7;
@@ -20,23 +20,58 @@ void setup() {
 
 void loop() {
   buttonState = digitalRead(Button);
-  delay(10);
-
-  if(buttonState == HIGH) {
+  delay(0);
+  if(buttonState == LOW) {
     digitalWrite(LED1, HIGH);
     delay(1000);
+    digitalWrite(LED1, LOW);
+    delay(1000);
+    digitalWrite(LED6, HIGH);
+    delay(1000);
+    digitalWrite(LED6, LOW);
+    delay(1000);
     digitalWrite(LED2, HIGH);
-    delay(2000);
-    digitalWrite(LED3,HIGH);
-   delay(1000);
-    digitalWrite(LED4,HIGH);
-    delay(2000);
+    delay(1000);
+    digitalWrite(LED2, LOW);
+    delay(1000);
     digitalWrite(LED5, HIGH);
     delay(1000);
+    digitalWrite(LED5, LOW);
+    delay(1000);
+    digitalWrite(LED3, HIGH);
+    delay(1000);
+    digitalWrite(LED3, LOW);
+    delay(1000);
+    digitalWrite(LED4, HIGH);
+    delay(1000);
+    digitalWrite(LED4, LOW);
+    delay(1000);
+    digitalWrite(LED1, HIGH);
+    delay(100);
+    digitalWrite(LED2, HIGH);
+    delay(100);
+    digitalWrite(LED3,HIGH);
+    delay(100);
+    digitalWrite(LED4,HIGH);
+    delay(100);
+    digitalWrite(LED5, HIGH);
+    delay(100);
     digitalWrite(LED6,HIGH);
-    delay(2000);
-  }else{
-    (buttonState == LOW);
+    delay(100);
+    digitalWrite(LED1, HIGH);
+    delay(100);
+    digitalWrite(LED2, HIGH);
+    delay(100);
+    digitalWrite(LED3,HIGH);
+    delay(100);
+    digitalWrite(LED4,HIGH);
+    delay(100);
+    digitalWrite(LED5, HIGH);
+    delay(100);
+    digitalWrite(LED6,HIGH);
+    delay(100);
+   }else{ 
+  if(buttonState == HIGH) {
   digitalWrite(LED1,LOW);
   delay(0);
   digitalWrite(LED2,LOW);
@@ -49,6 +84,6 @@ void loop() {
   delay(0);
   digitalWrite(LED6,LOW);
   delay(0);
+    }
   }
-
 }
