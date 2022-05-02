@@ -58,18 +58,6 @@ void loop() {
     delay(100);
     digitalWrite(LED6,HIGH);
     delay(100);
-    digitalWrite(LED1, HIGH);
-    delay(100);
-    digitalWrite(LED2, HIGH);
-    delay(100);
-    digitalWrite(LED3,HIGH);
-    delay(100);
-    digitalWrite(LED4,HIGH);
-    delay(100);
-    digitalWrite(LED5, HIGH);
-    delay(100);
-    digitalWrite(LED6,HIGH);
-    delay(100);
    }else{ 
   if(buttonState == HIGH) {
   digitalWrite(LED1,LOW);
