@@ -19,7 +19,7 @@ void loop() {
    buttonState3 = digitalRead(Button3);
 
     delay(100);
-    //Serial.write(buttonState1);
+    Serial.write(buttonState1);
     //Serial.println(buttonState1);
     //Serial.println(buttonState2);
     //Serial.println(buttonState3);

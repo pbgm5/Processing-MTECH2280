@@ -54,7 +54,7 @@ void draw() {
      fill(0);
      textSize(60);
      text("Bunny wants to bathe", 250, 650);
-    else if (task == 3){
+  }else if (task == 3){
     idlecharacter();
     fill(0);
     textSize(60);
